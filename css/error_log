@@ -1,0 +1,8 @@
+[10-Apr-2020 13:18:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'elemetwe_kviz.brojZastava' doesn't exist in /home/elemetwe/public_html/kviz/includes/classes/database.class.php:78
+Stack trace:
+#0 /home/elemetwe/public_html/kviz/includes/classes/database.class.php(78): PDOStatement->execute()
+#1 /home/elemetwe/public_html/kviz/includes/classes/db.class.php(41): Database->execute()
+#2 /home/elemetwe/public_html/kviz/includes/classes/zastave.class.php(54): Db_object::find_one('select broj fro...')
+#3 /home/elemetwe/public_html/kviz/index.php(24): Zastava::getLimit()
+#4 {main}
+  thrown in /home/elemetwe/public_html/kviz/includes/classes/database.class.php on line 78

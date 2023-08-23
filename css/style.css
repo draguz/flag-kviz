@@ -1,0 +1,182 @@
+	/* Add some margin to the page and set a default font and colour */
+
+body {
+  margin: 30px;
+  font-family: "Georgia", serif;
+  line-height: 1.8em;
+  color: #333;
+}
+
+
+}
+#controls{
+	font-size: 12px;
+}
+#time {
+    border: 2px solid black;
+    padding: 10px 5px;
+    font-size: 32px;
+}
+
+/* Give headings their own font */
+
+h1, h2, h3, h4 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/* Main content area */
+
+.clear {clear: both;}
+
+#pocetak {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #000;
+    opacity: 0.9;
+}
+.sredina {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -100px;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+}
+	.sredina label {color: #fff; font-size: 24px;}
+	.sredina input {height: 35px; width: 200px;}
+	
+#pocetak_igre{
+	position: relative;
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 600;
+    background: #14d614;
+    border-color: #14d614;
+    color: #000000;
+}
+
+#content {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+ 
+}
+
+/* Header/footer boxes */
+
+.wideBox {
+  clear: both;
+  text-align: center;
+  margin: 70px;
+  padding: 10px;
+  background: #ebedf2;
+  border: 1px solid #333;
+}
+
+.wideBox h1 {
+  font-weight: bold;
+  margin: 20px;
+  color: #666;
+  font-size: 1.5em;
+}
+
+/* Slots for final card positions */
+
+#countryFlags {
+  background: #ddf;
+  margin-right: 4%;
+}
+
+/* The initial pile of unsorted cards */
+
+#countryNames {
+  margin: 0 auto;
+  background: #ffd;
+}
+
+#countryFlags, #countryNames {
+  float: left;
+  width: 46%;
+  box-sizing: border-box;
+  text-align: center;
+  height: auto;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+}
+
+/* Individual cards and slots */
+
+#countryFlags div, #countryNames div {
+  	display: block;
+    float: left;
+    margin-left: 10px;
+    width: 100px;
+    height: 60px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background: #dedede;
+}
+
+
+#countryFlags div.hovered {
+  background: #aaa;
+}
+
+#countryFlags div {
+  border-style: dashed;
+  margin-bottom: 10px;
+}
+
+#countryNames div {
+  background: #666;
+  color: #fff;
+  font-size: 14px;
+  text-shadow: 0 0 3px #000;
+  margin-bottom: 10px;
+}
+
+#countryNames div.ui-draggable-dragging {
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+/* Individually coloured cards */
+
+#countryFlags div.correct { background: #79ff79; }
+
+
+
+/* "You did it!" message */
+#successMessage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -75px;
+      width: 400px;
+    height: 150px;
+  z-index: 100;
+  background: #dfd;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  padding: 20px;
+}
